@@ -20,5 +20,5 @@ check the semantics of the file. The semantic analyzer ensures that everything w
                         y = 4 + z;
                         } </code></p><br>
 is syntactically correct, but not semantically, as there is no declaration for the variable 'y' or 'z'.</p>
-<p>Once our file has been checked for syntax and semantical correctness, the compiler will then generate quadruples to assist in intermediate code generation. This is the part that gives the compiler its functionality and ability to perform operations.</p>
+<p>Once our file has been checked for syntax and semantic correctness, the compiler will then generate quadruples to assist in intermediate code generation. This is the part that gives the compiler its functionality and ability to perform operations.</p>
                    
