@@ -14,8 +14,11 @@
 
 By passing a file to this project through a command-line argument, the lexical analyzer begins by identifying and creating a list of all the tokens. This list will then be passed to the parser, which then
 follows through the rules of the C-Minus grammar to check the syntax of the C-Minus code. If it passes the syntactical analysis, the compiler will then
-check the semantics of the file. The semantic analyzer ensures that everything written in the code "makes sense".
-<br>          For example:<br>
+check the semantics of the file. The semantic analyzer ensures that everything written in the code "makes sense".</p>
+<p><br>          For example:<br>
        <code>  void main(void){
                         y = 4 + z;
-                        } </code>
+                        } </code></p><br>
+is syntactically correct, but not semantically, as there is no declaration for the variable 'y' or 'z'.</p>
+<p>Once our file has been checked for syntax and semantical correctness, the compiler will then generate quadruples to assist in intermediate code generation. This is the part that gives the compiler its functionality and ability to perform operations.</p>
+                   
