@@ -1,10 +1,21 @@
-<h1><b>C-Minus Compiler</b></h1>
+<h1 id="about"><b>C-Minus Compiler</b></h1>
 
 <p>The goal of this project is to create a fully functional C-Minus Compiler as listed in <a href="https://www.amazon.com/Compiler-Construction-Principles-Kenneth-Louden/dp/0534939724">Compiler Construction: Principles and Practice</a>
     C-Minus is essentially a subset of the C programming language, but is missing many of its componenets. The grammar for C-Minus can be found
     <a href="http://www.csci-snc.com/ExamplesX/C-Syntax.pdf">here</a>.
     
-<h2>How it Works</h2>
+<h1 id="toc">Table of Contents</h2>
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#howitworks">How it Works</a></li>
+    <li><a href="#cminusexamples">C-Minus Code Examples</a></li>
+    <li><a href="rejectedcode">Rejected Code Examples</a></li>
+    <li><a href="sourcefiles">Source Files</a></li>
+    <li><a href="sysprereq">System Prerequisites</a></li>
+    <li><a href="runcode">How to Run the C-Minus</a></li>
+</ul>
+    
+<h2 id="howitworks">How it Works</h2>
 <p>The front end of a compiler consists of four main parts:
      <ul>
       <li><b>Lexical Analyzer/Scanner:</b> finds the <a href="https://en.wikipedia.org/wiki/Lexical_analysis#Lexeme">lexemes</a> and <a href="https://en.wikipedia.org/wiki/Lexical_analysis#Token">tokens</a></li>
@@ -21,4 +32,13 @@ check the semantics of the file. The semantic analyzer ensures that everything w
                         } </code></p><br>
 is syntactically correct, but not semantically, as there is no declaration for the variable 'y' or 'z'.</p>
 <p>Once our file has been checked for syntax and semantic correctness, the compiler will then generate quadruples to assist in intermediate code generation. This is the part that gives the compiler its functionality and ability to perform operations.</p>
-                   
+
+<h2 id="cminusexamples">C-Minus Code Examples</h2>
+
+<h2 id="rejectedcode">Rejected Code Examples</h2>
+
+<h2 id="sourcefiles">Source Files</h2>
+
+<h2 id="sysprereq">System Prerequisites</h2>
+
+<h2 id="runcode">How to Run the C-Minus Compiler</h2>
