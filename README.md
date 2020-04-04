@@ -69,7 +69,10 @@ is syntactically correct, but not semantically, as there is no declaration for t
     }
     
 <h2 id="sourcefiles">Source Files</h2>
-<b>This C- compiler project is currently in progress. Below you can find the source files for the Token class, Lexical Analyzer class, and Parser class.</b>
-
+<b>This C- compiler project is currently in progress. Below you can find the source files for the Token class and Lexical Analyzer class.</b>
+<ul>
+    <li><a href="Token.java">Token.java</a></li>
+    <li><a href="LexicalAnalyzer.java">LexicalAnalyzer.java</a></li>
+</ul>
 <h2 id="runcode">How to Run the C-Minus Compiler</h2>
 <b>This C- compiler is currently in progress :).</b>
