@@ -9,9 +9,9 @@
     <li><a href="#about">About</a></li>
     <li><a href="#howitworks">How it Works</a></li>
     <li><a href="#cminusexamples">C-Minus Code Examples</a></li>
-    <li><a href="rejectedcode">Rejected Code Examples</a></li>
-    <li><a href="sourcefiles">Source Files</a></li>
-    <li><a href="runcode">How to Run the C-Minus</a></li>
+    <li><a href="#rejectedcode">Rejected Code Examples</a></li>
+    <li><a href="#sourcefiles">Source Files</a></li>
+    <li><a href="#runcode">How to Run the C-Minus</a></li>
 </ul>
     
 <h2 id="howitworks">How it Works</h2>
