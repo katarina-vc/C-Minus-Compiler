@@ -11,7 +11,6 @@
     <li><a href="#cminusexamples">C-Minus Code Examples</a></li>
     <li><a href="rejectedcode">Rejected Code Examples</a></li>
     <li><a href="sourcefiles">Source Files</a></li>
-    <li><a href="sysprereq">System Prerequisites</a></li>
     <li><a href="runcode">How to Run the C-Minus</a></li>
 </ul>
     
@@ -34,11 +33,43 @@ is syntactically correct, but not semantically, as there is no declaration for t
 <p>Once our file has been checked for syntax and semantic correctness, the compiler will then generate quadruples to assist in intermediate code generation. This is the part that gives the compiler its functionality and ability to perform operations.</p>
 
 <h2 id="cminusexamples">C-Minus Code Examples</h2>
+<p>As listed in  <a href="https://www.amazon.com/Compiler-Construction-Principles-Kenneth-Louden/dp/0534939724">Compiler Construction: Principles and Practice</a>, here as an example of C- code that will compile: A program to perform Euclid's Algorithm to compute the greatest common denominator</p><br>
+    
 
+    int gcd(int u, int v){
+    if(v == 0) return u;
+    else return gcd(v,u-u/v*v);
+    /* u-u/v*v == u mod v */
+    }
+    void main(void){
+    int x; int y;
+    x = input(); y = input();
+    output(gcd(x,y));
+    }
+
+    
 <h2 id="rejectedcode">Rejected Code Examples</h2>
+<p>Using the same example as before, below is an example of code that would not compile using this C- compiler. Due to the semantics of C-, this example will not compile for two reasons: 
+<ul>
+    <li>All variable declarations inside of a function must be declared at the beginning of the function.</li>
+    <li>Variables can not be declared and initialized at the same time</li>
+</ul>
+</p><br>
 
+    int gcd(int u, int v){
+    if(v == 0) return u;
+    else return gcd(v,u-u/v*v);
+    /* u-u/v*v == u mod v */
+    }
+    void main(void){
+    int x = 0; 
+    x = input(); y = input();
+    output(gcd(x,y));
+    int y;
+    }
+    
 <h2 id="sourcefiles">Source Files</h2>
-
-<h2 id="sysprereq">System Prerequisites</h2>
+<b>This C- compiler project is currently in progress. Below you can find the source files for the Token class, Lexical Analyzer class, and Parser class.</b>
 
 <h2 id="runcode">How to Run the C-Minus Compiler</h2>
+<b>This C- compiler is currently in progress :).</b>
